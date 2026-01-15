@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #f4f4f4;
+    color: #1c1c1c;
+    line-height: 1.7;
+}
+
+header {
+    background: white;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    z-index: 10;
+}
+
+h1 {
+        color: rgb(66, 4, 95);
+
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid #ddd;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    color: black;
+}
+
+nav a:hover {
+    border-bottom: 2px solid rgb(236, 165, 208);
+}
+
+header h1 {
+    padding: 6rem 2rem 3rem;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 2rem;
+}
+
+section {
+    background: white;
+    padding: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: rgb(69, 93, 138);
+
+}
+
+section p {
+    max-width: 700px;
+}
+
+section ul {
+    margin-top: 1rem;
+}
+
+section ul li {
+    list-style: none;
+    margin-bottom: 0.5rem;
+}
+
+section ul a {
+    text-decoration: underline;
+    color: black;
+}
+
+article {
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+    margin-top: 2rem;
+    background: #fafafa;
+    padding: 1.5rem;
+}
+
+article img {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-right: 1rem;
+}
+
+article p {
+    overflow: hidden;
+}
+
+section div {
+    clear: both;
+}
+
+footer {
+    background: white;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 900px) {
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+}
